@@ -1,5 +1,6 @@
 
 # Set Up a Web App in the Cloud 
+![web app](https://github.com/chinmayedm/Web-App-in-the-Cloud/blob/main/Screenshot%202025-11-17%20at%2014.35.35.png?raw=true)
 # What is VSCode and Why Is It Useful?
 
 I used VSCode in today’s project to edit and manage the Java web app’s files. 
@@ -32,6 +33,7 @@ A key pair is a set of cryptographic keys used for secure access to an EC2 insta
 VSCode is a free, open-source code editor. It provides features like syntax highlighting, debugging tools, extensions, and an integrated terminal, making it ideal for software development, including working with remote servers like EC2.
 
 I installed VSCode to write and edit code efficiently, set up a terminal for connecting to my EC2 instance, and manage my project files. It also allows me to use extensions that improve functionality and streamline development.
+![VS code](https://github.com/chinmayedm/Web-App-in-the-Cloud/blob/main/Screenshot%202025-11-17%20at%2014.36.05.png?raw=true)
 
 # My First Terminal Commands
 
@@ -49,6 +51,7 @@ I then updated my private key’s permissions using:
 
 
 This ensures the private key is readable only by me, which is required for secure SSH access.
+![terminal](https://github.com/chinmayedm/Web-App-in-the-Cloud/blob/main/Screenshot%202025-11-17%20at%2014.36.28.png?raw=true)
 
 # SSH Connection to EC2
 
@@ -60,6 +63,7 @@ To connect to my EC2 instance, I ran:
 This provides secure access using my .pem file with correct permissions (400).
 
 The connection requires the EC2 instance’s IPv4 DNS, which is the public address used to find and connect to the server.
+![SSH connection](https://github.com/chinmayedm/Web-App-in-the-Cloud/blob/main/Screenshot%202025-11-17%20at%2014.36.56.png?raw=true)
 
 # Maven & Java
 
@@ -78,11 +82,15 @@ mvn archetype:generate \
 -DarchetypeArtifactId=maven-archetype-webapp \
 -DinteractiveMode=false
 ```
+![application](https://github.com/chinmayedm/Web-App-in-the-Cloud/blob/main/Screenshot%202025-11-17%20at%2014.37.19.png?raw=true)
+![web directory](https://github.com/chinmayedm/Web-App-in-the-Cloud/blob/main/Screenshot%202025-11-17%20at%2014.37.38.png?raw=true)
+
 # Using Remote - SSH
 
 I installed the Remote - SSH extension to connect to the EC2 instance and manage files directly from VSCode.
 
 An SSH Host is the server you are connecting to. The required configuration details include the EC2 instance IP, the private key path (e.g., chinmaye-keypair.pem), and the username (ec2-user).
+![web app](https://github.com/chinmayedm/Web-App-in-the-Cloud/blob/main/Screenshot%202025-11-17%20at%2014.35.35.png?raw=true)
 
 # Exploring the Project Structure
 

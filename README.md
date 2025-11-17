@@ -41,14 +41,17 @@ The terminal is a text-based interface that allows users to interact with the op
 
 The first command I ran was:
 
-`cd ~/Desktop/DevOps`
+``` command line
+cd ~/Desktop/DevOps
+```
 
 This navigated me to the project directory.
 
 I then updated my private key’s permissions using:
 
-`chmod 400 chinmaye-keypair.pem`
-
+``` command line
+chmod 400 chinmaye-keypair.pem
+```
 
 This ensures the private key is readable only by me, which is required for secure SSH access.
 ![terminal](https://github.com/chinmayedm/Web-App-in-the-Cloud/blob/main/Screenshot%202025-11-17%20at%2014.36.28.png?raw=true)
@@ -57,7 +60,9 @@ This ensures the private key is readable only by me, which is required for secur
 
 To connect to my EC2 instance, I ran:
 
-`ssh -i /path/to/keypair.pem ec2-user@<EC2-public-DNS>`
+``` command line
+ssh -i /path/to/keypair.pem ec2-user@<EC2-public-DNS>
+```
 
 
 This provides secure access using my .pem file with correct permissions (400).
